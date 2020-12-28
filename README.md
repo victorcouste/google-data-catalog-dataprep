@@ -2,17 +2,17 @@
 
 ![image](dataprep_datacatalog.png)
 
-Update [Google Cloud Data Catalog](https://cloud.google.com/data-catalog/) tags on BigQuery tables with [Cloud Dataprep](https://cloud.google.com/dataprep) Metadata and Job profile via a [Cloud Function](https://cloud.google.com/functions).
+Create or update [Google Cloud Data Catalog](https://cloud.google.com/data-catalog/) tags on BigQuery tables with [Cloud Dataprep](https://cloud.google.com/dataprep) Metadata and Column Profile via a [Cloud Function](https://cloud.google.com/functions).
 
-2 Data Catalog tags are created or updated:
-- **Dataprep Metadata** tag attached to the BigQuery table and containing information from Dataprep job the user, Dataprep Job (id, name, url, timestamp), Dataset (id, name, url), Flow (id, name, url), Profile (url and nb valid, invalid an empty values) and the Dataflow job (id, url).
-- **Dataprep Column Profile** tag attached to each BigQuery table column and containing nb valid, invalid and empty values for the column.
+The 2 Data Catalog tags created or updated:
+- **Dataprep Metadata** tag attached to the BigQuery table and containing information from the Dataprep job used to create or update the BigQuery table : the user, Dataprep Job (id, name, url, timestamp), Dataprep Dataset (id, name, url), Dataprep Flow (id, name, url), Job Profile (url and nb valid, invalid an empty values) and the Dataflow job (id, url).
+- **Dataprep Column Profile** tag attached to all BigQuery table columns and containing number of valid, invalid and empty values for each column.
 
-To activate and use Cloud Data Catalog, go to https://cloud.google.com/data-catalog/ and https://console.cloud.google.com/datacatalog.
+To activate, learn and use Cloud Data Catalog, go to https://cloud.google.com/data-catalog/ and https://console.cloud.google.com/datacatalog.
 
-This repository contains the Cloud Function Python code that will be triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to update Data Catalog tags.
+This repository contains the Cloud Function Python code that will be triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to create or update 2 Data Catalog tags.
 
-In your Cloud Function, you need the 4 files:
+In your Cloud Function, you need the 5 files:
 - **[main.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/main.py)**
 - **[config.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/config.py)** where you need to update your GCP project name (where Tags Template are created) and the Dataprep Access Token (to use Dataprep API).
 - **[datacatalog_functions.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/datacatalog_functions.py)**
@@ -23,13 +23,16 @@ This Cloud Function uses:
 - [Python Client for Google Cloud Data Catalog API](https://googleapis.dev/python/datacatalog/latest/index.html#)
 - [Cloud Dataprep REST API](https://api.trifacta.com/dataprep-premium/index.html)
 
-To create the 2 Data Catalog Tag Template for Dataprep (Metadata and Job Profile), you can use:
 
-- **gcloud** and the command `gcloud data-catalog tag-templates create`, details found in [gcloud_tag-templates_create.sh](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/gcloud_tag-templates_create.sh), [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-gcloud) and [reference](https://cloud.google.com/sdk/gcloud/reference/data-catalog/tag-templates/create).
+Before runing the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep (Metadata and Column Profile).
+You can use:
 
-- **REST API** with the 2 template json files [dataprep_metadata_tag_template.json)(https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata_tag_template.json) and [dataprep_column_profile_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_column_profile_tag_template.json), [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-drest) and [reference](https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create).
+- **gcloud** and the command `gcloud data-catalog tag-templates create`, full command lines in [gcloud_tag-templates_create.sh](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/gcloud_tag-templates_create.sh), more details with and [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-gcloud) and [reference](https://cloud.google.com/sdk/gcloud/reference/data-catalog/tag-templates/create).
 
-When Data Catalog template tags are created you can find them from https://console.cloud.google.com/datacatalog.
+- **REST API** with the 2 tag template json files [dataprep_metadata_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata_tag_template.json) and [dataprep_column_profile_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_column_profile_tag_template.json), more details with an [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-drest) and [reference](https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create).
+
+
+When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from https://console.cloud.google.com/datacatalog.
 
 
 
