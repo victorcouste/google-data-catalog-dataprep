@@ -24,7 +24,7 @@ In your Cloud Function, you need the 5 files:
 - [requirements.txt](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/requirements.txt)
 
 
-Before runing the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep ([Job Metadata]((https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata_tag_template.txt) and [Job Column Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_column_profile_tag_template.txt)).
+Before runing the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep ([Job Metadata](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata_tag_template.txt) and [Job Column Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_column_profile_tag_template.txt)).
 You can use:
 
 - **gcloud** and the command `gcloud data-catalog tag-templates create`, full command lines in [gcloud_tag-templates_create.sh](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/gcloud_tag-templates_create.sh), more details with and [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-gcloud) and [reference](https://cloud.google.com/sdk/gcloud/reference/data-catalog/tag-templates/create).
