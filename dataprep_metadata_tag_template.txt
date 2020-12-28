@@ -1,0 +1,16 @@
+dataprep_job_id			Dataprep Job ID				STRING
+dataprep_job_timestamp	Dataprep Job Timestamp		DATETIME
+dataprep_user			Dataprep User				STRING
+valid					Dataprep Job Valid values	DOUBLE
+invalid					Dataprep Job Invalid values	DOUBLE
+empty					Dataprep Job Empty values	DOUBLE
+dataprep_job_profile	Dataprep Job Profile		STRING
+dataprep_job_url		Dataprep Job URL			STRING
+dataprep_dataset_id		Dataprep Dataset ID			STRING
+dataprep_dataset_name	Dataprep Dataset Name		STRING								
+dataprep_dataset_url	Dataprep Dataset URL		STRING				
+dataprep_flow_id		Dataprep Flow ID			STRING				
+dataprep_flow_name		Dataprep Flow Name			STRING
+dataprep_flow_url		Dataprep Flow URL			STRING	
+dataflow_job_id			Dataflow Job ID				STRING				
+dataflow_job_url		Dataflow Job URL			STRING
