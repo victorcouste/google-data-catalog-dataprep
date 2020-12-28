@@ -10,7 +10,7 @@ The 2 Data Catalog tags created or updated:
 
 To activate, learn and use Cloud Data Catalog, go to https://cloud.google.com/data-catalog/ and https://console.cloud.google.com/datacatalog.
 
-This repository contains the Cloud Function Python code that will be triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to create or update 2 Data Catalog tags.
+This repository contains the Cloud Function Python code triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to create or update 2 Data Catalog tags.
 
 In your Cloud Function, you need the 5 files:
 - **[main.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/main.py)**
