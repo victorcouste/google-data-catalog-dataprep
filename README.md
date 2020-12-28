@@ -12,16 +12,16 @@ To activate, learn and use Cloud Data Catalog, go to https://cloud.google.com/da
 
 This repository contains the Cloud Function Python code triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to create or update 2 Data Catalog tags.
 
+This Cloud Function uses:
+- [Python Client for Google Cloud Data Catalog API](https://googleapis.dev/python/datacatalog/latest/index.html#)
+- [Cloud Dataprep REST API](https://api.trifacta.com/dataprep-premium/index.html)
+
 In your Cloud Function, you need the 5 files:
 - [main.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/main.py)
 - [config.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/config.py) where you need to update your **GCP project name** (where Tags Template are created) and the **Dataprep Access Token** (to use Dataprep API).
 - [datacatalog_functions.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/datacatalog_functions.py)
 - [dataprep_metadata.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata.py)
 - [requirements.txt](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/requirements.txt)
-
-This Cloud Function uses:
-- [Python Client for Google Cloud Data Catalog API](https://googleapis.dev/python/datacatalog/latest/index.html#)
-- [Cloud Dataprep REST API](https://api.trifacta.com/dataprep-premium/index.html)
 
 
 Before runing the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep (Metadata and Column Profile).
