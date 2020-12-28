@@ -5,8 +5,8 @@
 Create or update [Google Cloud Data Catalog](https://cloud.google.com/data-catalog/) tags on BigQuery tables with [Cloud Dataprep](https://cloud.google.com/dataprep) Metadata and Column Profile via a [Cloud Function](https://cloud.google.com/functions).
 
 The 2 Data Catalog tags created or updated:
-- **Dataprep Metadata** tag attached to the BigQuery table and containing information from the Dataprep job used to create or update the BigQuery table : the user, Dataprep Job (id, name, url, timestamp), Dataprep Dataset (id, name, url), Dataprep Flow (id, name, url), Job Profile (url and nb valid, invalid an empty values) and the Dataflow job (id, url).
-- **Dataprep Column Profile** tag attached to all BigQuery table columns and containing number of valid, invalid and empty values for each column.
+- **[Dataprep Job Metadata](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata_tag_template.txt)** tag attached to the BigQuery table and containing information from the Dataprep job used to create or update the BigQuery table : the user, Dataprep Job (id, name, url, timestamp), Dataprep Dataset (id, name, url), Dataprep Flow (id, name, url), Job Profile (url and nb valid, invalid an empty values) and the Dataflow job (id, url).
+- **[Dataprep Job Column Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_column_profile_tag_template.txt)** tag attached to all BigQuery table columns and containing number of valid, invalid and empty values for each column.
 
 To activate, learn and use Cloud Data Catalog, go to https://cloud.google.com/data-catalog/ and https://console.cloud.google.com/datacatalog.
 
