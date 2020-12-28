@@ -21,7 +21,7 @@ gcloud --project <your_gcp_project> data-catalog tag-templates create cloud_data
 
 gcloud --project <your_gcp_project> data-catalog tag-templates create cloud_dataprep_column_profile \
     --location=us-central1 \
-    --display-name="Cloud Dataprep Column Profile" \
-    --field=id=valid,display-name="Dataprep Valid values",type=double\
-    --field=id=invalid,display-name="Dataprep Invalid values",type=double\
-    --field=id=empty,display-name="Dataprep Empty values",type=double
+    --display-name="Dataprep Column Profile" \
+    --field=id=valid,display-name="Valid values",type=double\
+    --field=id=invalid,display-name="Invalid values",type=double\
+    --field=id=empty,display-name="Empty values",type=double
