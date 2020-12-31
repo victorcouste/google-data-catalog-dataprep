@@ -1,4 +1,4 @@
-# google-data-catalog-dataprep
+# Google DataCatalog and Dataprep Tags
 
 <img src="https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_datacatalog.png" width="50%" height="50%">
 
