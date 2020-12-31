@@ -39,3 +39,8 @@ When Data Catalog template tags are created and when tags are created or updated
 
 
 Happy tagging !
+
+
+![image](DataCatalog_Dataprep_metadata_tag.png)
+
+![image](DataCatalog_Dataprep_column_profile_tag.png)
