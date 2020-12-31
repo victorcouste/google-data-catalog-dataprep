@@ -1,3 +1,0 @@
-valid					Dataprep Valid values	DOUBLE
-invalid					Dataprep Invalid values	DOUBLE
-empty					Dataprep Empty values	DOUBLE
