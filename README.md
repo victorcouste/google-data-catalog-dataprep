@@ -1,6 +1,6 @@
 # Google Data Catalog and Cloud Dataprep Tags
 
-<img src="https://github.com/victorcouste/google-data-catalog-dataprep/images/blob/main/dataprep_datacatalog.png" width="50%" height="50%">
+<img src="https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/images/dataprep_datacatalog.png" width="50%" height="50%">
 
 Create or update [Google Cloud Data Catalog](https://cloud.google.com/data-catalog/) tags on BigQuery tables with [Cloud Dataprep](https://cloud.google.com/dataprep) Metadata and Column Profile via a [Cloud Function](https://cloud.google.com/functions).
 
