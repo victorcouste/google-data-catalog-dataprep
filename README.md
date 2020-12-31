@@ -44,3 +44,7 @@ Happy tagging !
 ![image](DataCatalog_Dataprep_metadata_tag.png)
 
 ![image](DataCatalog_Dataprep_column_profile_tag.png)
+
+![image](DataCatalog_Dataprep_metadata_tag_template.png)
+
+![image](DataCatalog_Dataprep_column_profile_tag_template.png)
