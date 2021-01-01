@@ -37,7 +37,7 @@ You can use:
 When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from https://console.cloud.google.com/datacatalog.
 
 
-Finally you can also search BigQuery tables in Cloud Data Catalog with a Dataprep tag with from your own application like https://github.com/victorcouste/dataprep-datacatalog-explorer
+Finally, you can also search BigQuery tables in Cloud Data Catalog with a Dataprep tag from your own application like https://github.com/victorcouste/dataprep-datacatalog-explorer
 
 
 Happy tagging !
