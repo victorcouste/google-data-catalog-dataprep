@@ -6,7 +6,7 @@
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
       "order": 1
     },
     "invalid":{
@@ -14,7 +14,7 @@
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
       "order": 2
     },
     "empty":{
@@ -22,7 +22,7 @@
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
       "order": 3
     } 
   }
