@@ -7,6 +7,7 @@
       "type":{
         "primitiveType":"DOUBLE"
       }
+      "order": 1
     },
     "invalid":{
       "displayName":"Dataprep Invalid values",
@@ -14,6 +15,7 @@
       "type":{
         "primitiveType":"DOUBLE"
       }
+      "order": 2
     },
     "empty":{
       "displayName":"Dataprep Empty values",
@@ -21,6 +23,7 @@
       "type":{
         "primitiveType":"DOUBLE"
       }
+      "order": 3
     } 
   }
 }
