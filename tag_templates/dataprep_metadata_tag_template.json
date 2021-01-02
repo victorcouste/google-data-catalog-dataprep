@@ -6,112 +6,128 @@
       "isRequired": "true",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 1
     },
     "dataprep_job_timestamp":{
       "displayName":"Dataprep Job Timestamp",
       "isRequired": "true",
       "type":{
         "primitiveType":"DATETIME"
-      }
+      },
+      "order": 2
     },
     "dataprep_user":{
       "displayName":"Dataprep User",
       "isRequired": "true",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 3
     },
     "valid":{
       "displayName":"Dataprep Job Valid values",
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
+      "order": 4
     },
     "invalid":{
       "displayName":"Dataprep Job Invalid values",
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
+      "order": 5
     },
     "empty":{
       "displayName":"Dataprep Job Empty values",
       "isRequired": "false",
       "type":{
         "primitiveType":"DOUBLE"
-      }
+      },
+      "order": 6
     },   
     "dataprep_job_profile":{
       "displayName":"Dataprep Job Profile",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 7
     }, 
     "dataprep_job_url":{
       "displayName":"Dataprep Job URL",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 8
     }, 
     "dataprep_dataset_id":{
       "displayName":"Dataprep Dataset ID",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 9
     }, 
     "dataprep_dataset_name":{
       "displayName":"Dataprep Dataset Name",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 10
     }, 
     "dataprep_dataset_url":{
       "displayName":"Dataprep Dataset URL",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 11
     }, 
     "dataprep_flow_id":{
       "displayName":"Dataprep Flow ID",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 12
     },
     "dataprep_flow_name":{
       "displayName":"Dataprep Flow Name",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 13
     }, 
     "dataprep_flow_url":{
       "displayName":"Dataprep Flow URL",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 14
     }, 
     "dataflow_job_id":{
       "displayName":"Dataflow Job ID",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 15
     }, 
     "dataflow_job_url":{
       "displayName":"Dataflow Job URL",
       "isRequired": "false",
       "type":{
         "primitiveType":"STRING"
-      }
+      },
+      "order": 16
     } 
   }
 }
