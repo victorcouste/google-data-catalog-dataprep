@@ -18,7 +18,7 @@ This Cloud Function uses:
 
 In your Cloud Function, you need the 5 files:
 - [main.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/main.py)
-- [config.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/config.py) where you need to update your **GCP project name** (where Tags Template are created) and the **[Dataprep Access Token](https://docs.trifacta.com/display/DP/Access+Tokens+Page)** (to use Dataprep API).
+- [config.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/config.py) where you need to update your **GCP project name** (where Tags Template are created) and the **[Dataprep Access Token](https://docs.trifacta.com/display/DP/Access+Tokens+Page)** (to use Dataprep API). You can also update the 2 tag templates ID if needed.
 - [datacatalog_functions.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/datacatalog_functions.py)
 - [dataprep_metadata.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata.py)
 - [requirements.txt](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/requirements.txt)
