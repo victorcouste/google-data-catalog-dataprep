@@ -8,7 +8,7 @@ The 2 Data Catalog tags created or updated:
 - [Dataprep Job Metadata](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_metadata_tag_template.txt) tag attached to the BigQuery table and containing information from the Dataprep job used to create or update the BigQuery table : the user, Dataprep Job (id, name, url, timestamp), Dataprep Dataset (id, name, url), Dataprep Flow (id, name, url), Job Profile (url and nb valid, invalid an empty values) and the Dataflow job (id, url).
 - [Dataprep Job Column's Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_column_profile_tag_template.txt) tag attached to all BigQuery table columns and containing number of valid, invalid and empty values for each column.
 
-To activate, learn and use Cloud Data Catalog, go to https://cloud.google.com/data-catalog/ and https://console.cloud.google.com/datacatalog.
+To activate, learn and use Cloud Data Catalog, go to [https://cloud.google.com/data-catalog](https://cloud.google.com/data-catalog) and [https://console.cloud.google.com/datacatalog](https://console.cloud.google.com/datacatalog).
 
 This repository contains the Cloud Function Python code triggered from a [Dataprep Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) to create or update 2 Data Catalog tags.
 
@@ -34,10 +34,10 @@ You can use:
 - **REST API** with the 2 tag template json files [dataprep_metadata_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_metadata_tag_template.json) and [dataprep_column_profile_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_column_profile_tag_template.json), more details with an [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-drest) and [reference](https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create).
 
 
-When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from https://console.cloud.google.com/datacatalog.
+When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from [https://console.cloud.google.com/datacatalog](https://console.cloud.google.com/datacatalog).
 
 
-Finally, you can also search BigQuery tables in Cloud Data Catalog with a Dataprep tag from your own application like https://github.com/victorcouste/dataprep-datacatalog-explorer
+Finally, you can also search BigQuery tables in Cloud Data Catalog with a Dataprep tag from your own application like [https://github.com/victorcouste/dataprep-datacatalog-explorer](https://github.com/victorcouste/dataprep-datacatalog-explorer)
 
 
 Happy tagging !
