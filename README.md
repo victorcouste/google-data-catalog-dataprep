@@ -40,7 +40,7 @@ When Data Catalog template tags are created and when tags are created or updated
 Finally, you can also search BigQuery tables in Cloud Data Catalog with a Dataprep tag from your own application like [https://github.com/victorcouste/dataprep-datacatalog-explorer](https://github.com/victorcouste/dataprep-datacatalog-explorer)
 
 <br>
-**Happy wrangling and tagging !**
+Happy wrangling and tagging !
 <br><br><br>
 
 ![image](images/DataCatalog_Dataprep_metadata_tag.png)
