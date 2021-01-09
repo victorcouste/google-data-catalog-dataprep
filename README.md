@@ -33,6 +33,9 @@ You can use:
 
 - **REST API** with the 2 tag template json files [dataprep_metadata_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_metadata_tag_template.json) and [dataprep_column_profile_tag_template.json](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_column_profile_tag_template.json), more details with an [example](https://cloud.google.com/data-catalog/docs/quickstart-tagging#data-catalog-quickstart-drest) and [reference](https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create).
 
+To use the Cloud Function you just have to pass the Dataprep Job ID in a JSON format like ```{"job_id":"7827359"}```.
+
+And to trigger it from Cloud Dataprep flow, you can use a (Webhook)[https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task] on the Cloud Function endpoint with ```{"job_id":"$jobId"}``` as the POST body.
 
 When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from [https://console.cloud.google.com/datacatalog](https://console.cloud.google.com/datacatalog).
 
