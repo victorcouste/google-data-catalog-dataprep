@@ -35,7 +35,7 @@ You can use:
 
 To use the Cloud Function you just have to pass the Dataprep Job ID in a JSON format like ```{"job_id":"7827359"}```.
 
-And to trigger it from a Cloud Dataprep flow, you can use a (Webhook)[https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task] on the Cloud Function endpoint with ```{"job_id":"$jobId"}``` as the POST body.
+And to trigger it from a Cloud Dataprep flow, you can use a [Webhook](https://docs.trifacta.com/display/DP/Create+Flow+Webhook+Task) on the Cloud Function endpoint with ```{"job_id":"$jobId"}``` as the POST body.
 
 When Data Catalog template tags are created and when tags are created or updated on BigQuery tables, you can find all results from [https://console.cloud.google.com/datacatalog](https://console.cloud.google.com/datacatalog).
 
