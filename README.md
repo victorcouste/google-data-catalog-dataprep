@@ -19,12 +19,12 @@ This Cloud Function uses:
 In your Cloud Function, you need the 5 files:
 - [main.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/main.py)
 - [config.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/config.py) where you need to update your **GCP project name** (where Tags Template are created) and the **[Dataprep Access Token](https://docs.trifacta.com/display/DP/Access+Tokens+Page)** (to use Dataprep API). You can also update the 2 tag templates ID if needed.
-- [datacatalog_functions.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/datacatalog_functions.py)
-- [dataprep_metadata.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata.py)
+- [datacatalog_functions.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/datacatalog_functions.py) to get or update Data Catalog objects
+- [dataprep_metadata.py](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/dataprep_metadata.py) to get Cloud Dataprep metadata
 - [requirements.txt](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/requirements.txt)
 
 
-Before runing the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep ([Job Metadata](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_metadata_tag_template.txt) and [Job Column Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_column_profile_tag_template.txt)).
+Before running the Cloud Function (and create or update tags), you need to create the 2 Data Catalog Tag Templates for Dataprep ([Job Metadata](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_metadata_tag_template.txt) and [Job Column Profile](https://github.com/victorcouste/google-data-catalog-dataprep/blob/main/tag_templates/dataprep_column_profile_tag_template.txt)).
 You can use:
 
 - **Cloud Console** where you can [manage your Tag Templates](https://console.cloud.google.com/datacatalog?q=type%3DTAG_TEMPLATE)
